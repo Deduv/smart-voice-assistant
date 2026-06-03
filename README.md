@@ -1,11 +1,46 @@
-# Smart Voice Assistant
+# Smart Voice Assistant — API Inteligente com Reconhecimento de Fala
 
-Este é um projeto de assistente inteligente por voz desenvolvido como desafio para o Bootcamp Santander da DIO.
+![Java](https://img.shields.io/badge/Java-21-ED8B00?style=flat&logo=openjdk&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.x-6DB33F?style=flat&logo=springboot&logoColor=white)
+![Spring AI](https://img.shields.io/badge/Spring%20AI-Framework-6DB33F?style=flat)
+![Docker](https://img.shields.io/badge/Docker-Infrastructure-2496ED?style=flat&logo=docker&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-orange?style=flat)
 
-## 🚀 Tecnologias Utilizadas
-* **Java** (Linguagem principal)
-* **Spring Boot** (Estrutura do ecossistema e serviços)
-* **Antigravity** (Agente de voz utilizado no projeto)
+API Inteligente com integração de inteligência artificial e reconhecimento de fala, desenvolvida como projeto prático para o Bootcamp Santander 2026 - Java Backend na plataforma DIO.
 
-## 📝 Descrição
-O projeto consiste em um assistente virtual inteligente controlado por comandos de voz, integrando os recursos do Spring com as capacidades de processamento do agente Antigravity para interpretar e responder às solicitações dos utilizadores.
+---
+
+## Sobre o Projeto
+
+O Smart Voice Assistant é uma API REST projetada para orquestrar fluxos de inteligência artificial, integrando o ecossistema Spring Boot com recursos de processamento de áudio e modelos de linguagem (LLMs). O projeto utiliza o Antigravity como agente inteligente para interpretar comandos de voz, realizar transcrições (Audio-to-Text), sintetizar respostas (Text-to-Speech) e executar funções de negócio via Tool Calling.
+
+---
+
+## Conceitos e Tecnologias Aplicadas
+
+| Módulo / Conceito | Aplicação |
+|---|---|
+| **Spring AI & LLMs** | Integração e configuração do ecossistema de inteligência artificial com ChatModel. |
+| **ChatClient & Contexto** | Gerenciamento de fluência, memória e contexto das interações com o agente. |
+| **Tool Calling** | Capacidade da IA de identificar e executar funções reais no sistema. |
+| **Transcription API** | Componente responsável por transformar áudio em texto (Speech-to-Text). |
+| **Speech API** | Componente de síntese de voz (Text-to-Speech) para resposta do assistente. |
+| **Infraestrutura** | Persistência de dados e serviços auxiliares configurados via Docker. |
+| **Exposição REST** | Implementação de endpoints e controllers para processamento dos fluxos. |
+
+---
+
+## Estrutura Base do Projeto
+smart-voice-assistant/
+├── src/main/java/com/santander/assistant/
+│   ├── config/                   # Configurações de beans e Spring AI
+│   ├── controllers/              # Endpoints REST da aplicação
+│   ├── services/                 # Lógica de integração (ChatModel, Transcrição, Voz)
+│   └── model/                    # Entidades e regras de persistência
+└── src/main/resources/
+├── application.properties    # Propriedades e chaves de API do modelo
+└── docker-compose.yml        # Infraestrutura local da API
+
+---
+
+*Desenvolvido por [Deduv](https://github.com/Deduv) · Graduando em Engenharia de Software*
