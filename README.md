@@ -30,17 +30,5 @@ O Smart Voice Assistant é uma API REST projetada para orquestrar fluxos de inte
 
 ---
 
-## Estrutura Base do Projeto
-smart-voice-assistant/
-├── src/main/java/com/santander/assistant/
-│   ├── config/                   # Configurações de beans e Spring AI
-│   ├── controllers/              # Endpoints REST da aplicação
-│   ├── services/                 # Lógica de integração (ChatModel, Transcrição, Voz)
-│   └── model/                    # Entidades e regras de persistência
-└── src/main/resources/
-├── application.properties    # Propriedades e chaves de API do modelo
-└── docker-compose.yml        # Infraestrutura local da API
-
----
 
 *Desenvolvido por [Deduv](https://github.com/Deduv) · Graduando em Engenharia de Software*
