@@ -31,4 +31,4 @@ O Smart Voice Assistant é uma API REST projetada para orquestrar fluxos de inte
 ---
 
 
-*Desenvolvido por [Deduv](https://github.com/Deduv) · Graduando em Engenharia de Softwar*
+*Desenvolvido por [Deduv](https://github.com/Deduv) · Graduando em Engenharia de Software*
